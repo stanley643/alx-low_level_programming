@@ -3,7 +3,7 @@
 /**
  * print_numbers -prints out
  * void: data type not defined
- * Return: output
+ * Return: void
  *
  */
 
