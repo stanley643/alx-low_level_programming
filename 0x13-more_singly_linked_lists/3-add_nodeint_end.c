@@ -1,5 +1,13 @@
 #include "lists.h"
 
+/**
+ * add_nodeint_end- the function of adding the values of a node at the beginning
+ * @head: pointer been passed as value of head
+ * @n: integer been passed
+ * Return: returns NULL and the temp
+ *
+ */
+
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *temp = malloc(sizeof(listint_t));
