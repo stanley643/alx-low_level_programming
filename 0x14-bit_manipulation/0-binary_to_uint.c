@@ -1,25 +1,25 @@
-#include"main.h"
-#include<stdlib.h>
+#include "main.h"
+#include <stdlib.h>
 
-unsignedintbinary_to_uint(constchar*b)
+unsigned int binary_to_uint(const char *b)
 {
-unsignedintresult;
+    unsigned int result;
 
-if(b==NULL)
-return0;
+    if (b == NULL)
+        return 0;
+    
+    result = 0;
 
-result=0;
+    while (*b != '\0')
+    {
+        if (*b == '0' || *b == '1')
+        {
+            result = result * 2 + (*b - '0');
+            b++;
 
-while(*b!='\0')
-{
-if(*b=='0'||*b=='1')
-{
-result=result*2+(*b-'0');
-b++;
-
-}
-else
-return0;
-}
-returnresult;
+        }
+        else
+            return 0;
+    }
+    return result;
 }
