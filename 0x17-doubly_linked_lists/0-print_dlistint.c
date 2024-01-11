@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
  * print_dlistint - function to be implemented
  * @h: value being passed
